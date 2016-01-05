@@ -41,7 +41,7 @@ var reportError = function (error) {
     notify({
        title: 'Error: [' + error.plugin + ']',
        subtitle: 'File: [' + error.file + ']',
-       message: 'Line: ' + error.line + ' --  See console.',
+       message: 'Line: ' + error.line ,
        sound: 'Funk',
        duration: 5
      }).write(error);
