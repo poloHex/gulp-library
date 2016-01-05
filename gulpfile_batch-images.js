@@ -1,3 +1,14 @@
+
+/**
+Batch image crop and compress with Tinypng, Image Resize and Rename
+gulp-tinypng-compress: https://www.npmjs.com/package/gulp-tinypng
+gulp-image-resize: https://www.npmjs.com/package/gulp-image-resize
+gulp-rename: https://www.npmjs.com/package/gulp-rename
+
+Requirements
+Tinypng API Key: https://tinypng.com/developers/ 
+**/
+
 var gulp            = require('gulp');
 var imageresize     = require('gulp-image-resize');
 var rename          = require('gulp-rename');
@@ -35,7 +46,7 @@ var images = [
 /**
  * @task batch
  * @usage $ gulp batch
- * Batch resize and compress of favicon
+ * Batch, resize and compress of favicon
  */
 gulp.task('batch', function () {
 
