@@ -12,7 +12,7 @@ var concat          = require('gulp-concat');
 var cssnano         = require('gulp-cssnano');
 var cache           = require('gulp-cache');
 var del             = require('del');
-var notify          = require('gulp-notify'); 
+var notify          = require('gulp-notify');
 var source          = require('vinyl-source-stream');
 var buffer          = require('vinyl-buffer');
 var plumber         = require('gulp-plumber');
@@ -173,7 +173,7 @@ gulp.task('resize', function () {
       .pipe(imageresize(resize_settings))
 
       .pipe(tinypng({
-        key: 'xqCaq2-ii49c5-l0oZjPnAV1DJdGGZiD',
+        key: 'API-KEY',
   	    log: true
       }))
 
