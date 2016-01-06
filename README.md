@@ -1,4 +1,4 @@
-## Gulp Library (https://github.com/tarah-s/Gulp-Library)
+## gulp-library (https://github.com/tarah-s/gulp-library)
 
 Gulp build organisation with multiple files. 
 
