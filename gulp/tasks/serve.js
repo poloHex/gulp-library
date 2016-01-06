@@ -20,17 +20,6 @@ var browserSync     = require('browser-sync');
 var reload          = browserSync.reload;
 
 
-var reportError = function (error) {
-    notify({
-       title: 'Error: [' + error.plugin + ']',
-       subtitle: 'File: [' + error.file + ']',
-       message: 'Line: ' + error.line ,
-       sound: 'Funk',
-       duration: 5
-     }).write(error);
-    this.emit('end');
-};
-
 gulp.task('serve', ['styles'], function() {
   browserSync.init({
     server: {
@@ -41,7 +30,7 @@ gulp.task('serve', ['styles'], function() {
   gulp.watch('public/*.html').on('change',browserSync.reload);
 });
 
-
+ 
 /**
  * @task sass
  * @usage $ gulp sass

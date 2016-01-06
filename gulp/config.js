@@ -1,3 +1,8 @@
+/**
+* Notify is used for global error message 
+**/
+
+var notify          = require('gulp-notify');
 
 // Global Settings
 module.exports = {
@@ -49,3 +54,15 @@ images = [
     { folder: 'bg', width: 1200, crop: false },
     { folder: 'bg_mobile', width: 600, height: 280, crop: true },
 ];
+
+
+reportError = function (error) {
+    notify({
+       title: 'Error: [' + error.plugin + ']',
+       subtitle: 'File: [' + error.file + ']',
+       message: 'Line: ' + error.line ,
+       sound: 'Funk',
+       duration: 5
+     }).write(error);
+    this.emit('end');
+};
