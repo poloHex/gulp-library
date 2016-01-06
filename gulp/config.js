@@ -13,7 +13,7 @@ module.exports = {
         input: {
             file: 'styles.scss',
             files: 'app/scss/**/*.scss',
-            path: '/scss/',
+            path: 'app/scss/',
         },
         output: {
             style: 'expanded',
@@ -23,6 +23,19 @@ module.exports = {
             message: 'Sass task complete'
         }
     },
+
+    js: {
+        input: {
+            files: 'app/js/**/*.js',
+            file: 'app/js/app.js'
+        },
+        output: {
+            file: 'main.js',
+            path: 'assets/js',
+            message: 'JS task complete'
+        }
+    },
+
     images: {
       input: {
           files: 'app/src/images/',

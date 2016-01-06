@@ -6,8 +6,8 @@ requireDir('./gulp/tasks', { recurse: false });
 
 
 // DEV -  Serve sass with live reload
-gulp.task('default', ['serve', 'sass']);
+gulp.task('default', ['serve']);
 
 
-// BUILD 
+// BUILD
 // gulp.task('default', ['build']);
