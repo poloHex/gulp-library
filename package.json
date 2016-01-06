@@ -1,4 +1,17 @@
 {
+  "name": "gulp-library",
+  "version": "1.0.0",
+  "description": "A gulp task library for project builds",
+  "main": "gulpfile.js",
+  "author": "Tarah Soljan",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tarah-s/gulp-library"
+  },
+  "keywords": {
+    "gulp",
+    "gulp organization"
+  },
   "dependencies": {
     "gulp": "^3.9.0"
   },
