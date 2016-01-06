@@ -42,3 +42,9 @@ favicons = [
     { rename: 'favicon-192x192', width: 192, height: 192, crop: true },
     { rename: 'apple-touch-icon-192x192', width: 192, height: 192, crop: true },
 ];
+
+
+hero = [
+    { rename: 'bg', width: 1200, crop: false },
+    { rename: 'bg_mobile', width: 600, height: 280, crop: true },
+];
