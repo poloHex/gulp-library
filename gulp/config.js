@@ -6,6 +6,9 @@ var notify          = require('gulp-notify');
 
 // Global Settings
 module.exports = {
+
+    baseurl: 'public',
+
     sass: {
         input: {
             file: 'styles.scss',

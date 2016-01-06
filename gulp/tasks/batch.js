@@ -1,5 +1,8 @@
 
 /**
+* @task batch
+* @usage $ gulp batch 
+*
 * Batch image crop and compress with Tinypng, Image Resize and Rename
 * gulp-tinypng-compress: https://www.npmjs.com/package/gulp-tinypng
 * gulp-image-resize: https://www.npmjs.com/package/gulp-image-resize
@@ -14,15 +17,7 @@ var config          = require('../config');
 var imageresize     = require('gulp-image-resize');
 var rename          = require('gulp-rename');
 var tinypng         = require('gulp-tinypng-compress');
-
-
-
-
-/**
- * @task batch
- * @usage $ gulp batch
- * Batch, resize and compress of favicon
- */
+ 
 gulp.task('batch', function () {
 
   favicons.forEach(function(type){

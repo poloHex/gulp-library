@@ -14,12 +14,12 @@ var browserSync     = require('browser-sync');
 var reload          = browserSync.reload;
 
 
-gulp.task('serve', ['styles'], function() {
+gulp.task('serve', ['sass'], function() {
   browserSync.init({
     server: {
-      baseDir: 'public'
+      baseDir: config.baseurl
     }
   });
   gulp.watch(config.sass.input.files, ['sass']);
-  gulp.watch('public/*.html').on('change',browserSync.reload);
+  gulp.watch(config.baseurl+'/*.html').on('change',browserSync.reload);
 });

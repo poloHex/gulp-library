@@ -1,12 +1,4 @@
 {
-  "name": "Gulp Snippets",
-  "version": "1.0.0",
-  "description": "A gulp snippets library",
-  "main": "gulpfile.js",
-  "author": "Tarah Soljan",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "dependencies": {
     "gulp": "^3.9.0"
   },

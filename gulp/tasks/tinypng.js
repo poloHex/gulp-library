@@ -16,7 +16,7 @@ gulp.task('tinypng', function() {
     gulp.src(config.images.input.files)
     .pipe(tinypng({
       key: 'API-KEY',
-			log: true
+	  log: true
     }))
     .pipe(gulp.dest(config.images.output.path));
 });

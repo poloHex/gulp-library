@@ -18,7 +18,7 @@ var reload          = browserSync.reload;
 
 
 gulp.task('sass', function () {
-    return gulp.src('_app/scss/styles.scss')
+    return gulp.src(config.sass.input.path+config.sass.input.file)  
     .pipe(plumber({
       errorHandler : reportError
     }))

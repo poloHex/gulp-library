@@ -1,3 +1,7 @@
+# Gulp Library (https://github.com/tarah-s/Gulp-Library)
+
+Gulp build organisation with multiple files. 
+
 
 ### Requirements
 * [Node.js] (https://nodejs.org/en/)
@@ -8,6 +12,22 @@ You can use homebrew to install both ImageMagick and GraphicsMagick. These will 
 * [Homebrew] (http://brew.sh/)
 * [ImageMagick] (http://www.imagemagick.org/script/index.php)
 * [GraphicsMagick] (http://www.graphicsmagick.org/)
+
+### Installation
+```
+git clone https://github.com/tarah-s/Gulp-Library.git
+npm install
+
+```
+
+### Start
+```
+gulp
+
+```
+
+### Config
+Change all your global settings in the gulp/config.js file
 
 
 ### Resources
@@ -20,9 +40,9 @@ You can use homebrew to install both ImageMagick and GraphicsMagick. These will 
 * [Smashing Magazine - Efficient Image Resizing With ImageMagick] (http://www.smashingmagazine.com/2015/06/efficient-image-resizing-with-imagemagick/)
 * [ImageMagick Options] (http://www.imagemagick.org/script/command-line-options.php)
 * [Using gulp with Babel] (http://macr.ae/article/gulp-and-babel.html)
-* [Using gulp with Babel] (https://blog.simpleblend.net/gulp-organization-structure/)
+* [Splitting a gulpfile into multiple files] (https://blog.simpleblend.net/gulp-organization-structure/)
 * [Gulp Organization & Structure] (http://macr.ae/article/splitting-gulpfile-multiple-files.html)
-* [requireDir] (https://github.com/aseemk/requireDir)[requireDir](https://www.npmjs.com/package/require-dir)
+* [require-Dir] (https://github.com/aseemk/requireDir) 
 * [Scotch io - gulp automation] (https://scotch.io/tutorials/automate-your-tasks-easily-with-gulp-js) 
 * [JSPM] (http://jspm.io/docs/getting-started.html)
 * [ryantbrown] (https://gist.github.com/ryantbrown/239dfdad465ce4932c81)
