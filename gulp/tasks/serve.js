@@ -1,5 +1,5 @@
 /**
-* Build Script (WIP)
+* Browser roload on change, if error occurs show a message and restart watch
 
 * Requirements
 * gulp-plumber: https://github.com/floatdrop/gulp-plumber
@@ -9,6 +9,7 @@
 
 
 var gulp            = require('gulp');
+var config          = require('../config');
 var autoprefixer    = require('gulp-autoprefixer');
 var sourcemaps      = require('gulp-sourcemaps');
 var sass            = require('gulp-sass');
@@ -36,7 +37,7 @@ gulp.task('serve', ['styles'], function() {
       baseDir: 'public'
     }
   });
-  gulp.watch(settings.sass.input.files, ['styles']);
+  gulp.watch(config.sass.input.files, ['styles']);
   gulp.watch('public/*.html').on('change',browserSync.reload);
 });
 
@@ -61,6 +62,6 @@ gulp.task('styles', function () {
     .pipe(autoprefixer())
     .pipe(sourcemaps.write('./'))
     .pipe(browserSync.stream())
-    .pipe(gulp.dest(settings.sass.output.path))
+    .pipe(gulp.dest(config.sass.output.path))
     .pipe(ignore.exclude('*.map'))
 });

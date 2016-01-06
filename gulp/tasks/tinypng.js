@@ -8,15 +8,15 @@
 
 **/
 
-var gulp = require('gulp');
-var tinypng = require('gulp-tinypng-compress');
+var gulp            = require('gulp');
+var config          = require('../config');
+var tinypng         = require('gulp-tinypng-compress');
 
 gulp.task('tinypng', function() {
-    gulp.src(settings.images.input.files)
+    gulp.src(config.images.input.files)
     .pipe(tinypng({
       key: 'API-KEY',
 			log: true
     }))
-    .pipe(gulp.dest(settings.images.output.path));
+    .pipe(gulp.dest(config.images.output.path));
 });
- 

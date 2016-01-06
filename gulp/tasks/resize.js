@@ -11,9 +11,10 @@
 
 **/
 
-var gulp = require('gulp');
-var imageresize = require('gulp-image-resize');
-var tinypng = require('gulp-tinypng-compress');
+var gulp            = require('gulp');
+var config          = require('../config');
+var imageresize     = require('gulp-image-resize');
+var tinypng         = require('gulp-tinypng-compress');
 
 var images = [
     { folder: 'bg', width: 1200, crop: false },
@@ -36,7 +37,7 @@ gulp.task('resize', function () {
 
         gulp
 
-        .src(settings.images.input+type.folder+'/**/*')
+        .src(config.images.input+type.folder+'/**/*')
 
         .pipe(imageresize(resize_settings))
 
@@ -45,7 +46,7 @@ gulp.task('resize', function () {
     	    log: true
         }))
 
-        .pipe(gulp.dest(settings.images.output.path+type.folder));
+        .pipe(gulp.dest(config.images.output.path+type.folder));
 
     });
 });

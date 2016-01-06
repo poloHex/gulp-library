@@ -3,14 +3,13 @@
  * Removes all compiled sass & javascript files
  */
 
-var gulp            = require('gulp');
+ var gulp            = require('gulp');
+ var config          = require('../config');
 var del             = require('del');
 
 gulp.task('clean', function(callback) {
   callback = callback || function() {};
   del([
-      settings.sass.output.path
+      config.sass.output.path
   ], callback);
 });
-
- 

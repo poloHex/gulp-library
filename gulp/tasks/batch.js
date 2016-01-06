@@ -10,6 +10,7 @@
 **/
 
 var gulp            = require('gulp');
+var config          = require('../config');
 var imageresize     = require('gulp-image-resize');
 var rename          = require('gulp-rename');
 var tinypng         = require('gulp-tinypng-compress');
@@ -51,7 +52,7 @@ gulp.task('batch', function () {
 
       gulp
 
-      .src(settings.images.input.favicons+'/**/*')
+      .src(config.images.input.favicons+'/**/*')
       .pipe(imageresize(resize_settings))
       .pipe(rename(type.rename))
 
@@ -60,9 +61,7 @@ gulp.task('batch', function () {
   	    log: true
       }))
 
-      .pipe(gulp.dest(settings.images.output.favicons));
+      .pipe(gulp.dest(config.images.output.favicons));
 
   });
 });
-
- 
