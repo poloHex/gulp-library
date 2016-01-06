@@ -1,9 +1,9 @@
 /**
-Browser roload on change, if error occurs show a message anf restart watch
+* Build Script (WIP)
 
-Requirements
-gulp-plumber: https://github.com/floatdrop/gulp-plumber
-gulp-notify: https://github.com/mikaelbr/gulp-notify
+* Requirements
+* gulp-plumber: https://github.com/floatdrop/gulp-plumber
+* gulp-notify: https://github.com/mikaelbr/gulp-notify
 
 **/
 
@@ -18,24 +18,6 @@ var plumber         = require('gulp-plumber');
 var browserSync     = require('browser-sync');
 var reload          = browserSync.reload;
 
-
-// Settings
-var settings = {
-    sass: {
-        input: {
-            file: 'styles.scss',
-            files: '_app/scss/**/*.scss',
-            path: '_app/scss/',
-        },
-        output: {
-            style: 'expanded',
-            sourcemap: true,
-            file: 'styles.css',
-            path: 'public/assets/css/',
-            message: 'Sass task complete'
-        }
-    }
-};
 
 var reportError = function (error) {
     notify({
@@ -82,9 +64,3 @@ gulp.task('styles', function () {
     .pipe(gulp.dest(settings.sass.output.path))
     .pipe(ignore.exclude('*.map'))
 });
-
-/**
- * @task default
- * @usage $ gulp
- */
-gulp.task('default', ['serve']);

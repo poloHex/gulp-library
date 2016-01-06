@@ -1,12 +1,12 @@
 
 /**
-Batch image crop and compress with Tinypng, Image Resize and Rename
-gulp-tinypng-compress: https://www.npmjs.com/package/gulp-tinypng
-gulp-image-resize: https://www.npmjs.com/package/gulp-image-resize
-gulp-rename: https://www.npmjs.com/package/gulp-rename
+* Batch image crop and compress with Tinypng, Image Resize and Rename
+* gulp-tinypng-compress: https://www.npmjs.com/package/gulp-tinypng
+* gulp-image-resize: https://www.npmjs.com/package/gulp-image-resize
+* gulp-rename: https://www.npmjs.com/package/gulp-rename
 
-Requirements
-Tinypng API Key: https://tinypng.com/developers/ 
+* Requirements
+* Tinypng API Key: https://tinypng.com/developers/
 **/
 
 var gulp            = require('gulp');
@@ -14,18 +14,6 @@ var imageresize     = require('gulp-image-resize');
 var rename          = require('gulp-rename');
 var tinypng         = require('gulp-tinypng-compress');
 
-
-// Settings
-var settings = {
-    images: {
-      input: {
-          files: '_app/src/images/favicons/'
-      },
-      output: {
-          path: 'public/assets/images/favicons/'
-      }
-    }
-};
 
 var images = [
     { rename: 'mstile-558x558', width: 558, crop: false },
@@ -41,7 +29,6 @@ var images = [
     { rename: 'favicon-192x192', width: 192, height: 192, crop: true },
     { rename: 'apple-touch-icon-192x192', width: 192, height: 192, crop: true },
 ];
-
 
 /**
  * @task batch
@@ -64,7 +51,7 @@ gulp.task('batch', function () {
 
       gulp
 
-      .src(settings.images.input.files+'/**/*')
+      .src(settings.images.input.favicons+'/**/*')
       .pipe(imageresize(resize_settings))
       .pipe(rename(type.rename))
 
@@ -73,14 +60,9 @@ gulp.task('batch', function () {
   	    log: true
       }))
 
-      .pipe(gulp.dest(settings.images.output.path));
+      .pipe(gulp.dest(settings.images.output.favicons));
 
   });
 });
 
-
-/**
- * @task default
- * @usage $ gulp
- */
-gulp.task('default', ['batch']);
+ 
