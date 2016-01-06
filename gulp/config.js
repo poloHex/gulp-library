@@ -1,5 +1,5 @@
 /**
-* Notify is used for global error message 
+* Notify is used for global error message
 **/
 
 var notify          = require('gulp-notify');
@@ -12,8 +12,8 @@ module.exports = {
     sass: {
         input: {
             file: 'styles.scss',
-            files: '_app/scss/**/*.scss',
-            path: '_app/scss/',
+            files: 'app/scss/**/*.scss',
+            path: '/scss/',
         },
         output: {
             style: 'expanded',
@@ -25,8 +25,8 @@ module.exports = {
     },
     images: {
       input: {
-          files: '_app/src/images/',
-          favicons: '_app/src/images/favicons/'
+          files: 'app/src/images/',
+          favicons: 'app/src/images/favicons/'
       },
       output: {
           path: 'public/assets/images/',
