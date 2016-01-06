@@ -15,7 +15,7 @@ You can use homebrew to install both ImageMagick and GraphicsMagick. These will 
 
 ### Installation
 ```
-git clone https://github.com/tarah-s/Gulp-Library.git
+git clone https://github.com/tarah-s/gulp-library.git
 npm install
 
 ```
