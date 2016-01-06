@@ -3,7 +3,7 @@
 * [Node.js] (https://nodejs.org/en/)
 * [Gulp] (http://gulpjs.com/)
 
-#### Gulp image processing
+#### Image processing
 You can use homebrew to install both ImageMagick and GraphicsMagick. These will be needed to run resize of image files.
 * [Homebrew] (http://brew.sh/)
 * [ImageMagick] (http://www.imagemagick.org/script/index.php)
