@@ -1,6 +1,6 @@
 ## gulp-library (https://github.com/tarah-s/gulp-library)
 
-Gulp build organisation with multiple files. 
+A gulp task library for project builds.
 
 
 ### Requirements
@@ -30,6 +30,12 @@ gulp
 Change all your global settings in the gulp/config.js file
 
 
+### Run individual gulp tasks
+```
+gulp batch
+
+```
+
 ### Resources
 * [Gulp - Getting Started] (https://github.com/gulpjs/gulp/blob/master/docs/getting-started.md)
 * [Browsersync + Gulp.js] (https://www.browsersync.io/docs/gulp/)
@@ -42,7 +48,7 @@ Change all your global settings in the gulp/config.js file
 * [Using gulp with Babel] (http://macr.ae/article/gulp-and-babel.html)
 * [Splitting a gulpfile into multiple files] (https://blog.simpleblend.net/gulp-organization-structure/)
 * [Gulp Organization & Structure] (http://macr.ae/article/splitting-gulpfile-multiple-files.html)
-* [require-Dir] (https://github.com/aseemk/requireDir) 
-* [Scotch io - gulp automation] (https://scotch.io/tutorials/automate-your-tasks-easily-with-gulp-js) 
+* [require-Dir] (https://github.com/aseemk/requireDir)
+* [Scotch io - gulp automation] (https://scotch.io/tutorials/automate-your-tasks-easily-with-gulp-js)
 * [JSPM] (http://jspm.io/docs/getting-started.html)
 * [ryantbrown] (https://gist.github.com/ryantbrown/239dfdad465ce4932c81)
