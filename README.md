@@ -16,6 +16,6 @@ You can use homebrew to install both ImageMagick and GraphicsMagick. These will 
 * [CSS Tricks - Gulp for Beginners] (https://css-tricks.com/gulp-for-beginners/)
 * [Hugo Giraudel - A Simple Gulp’y Workflow For Sass] (http://www.sitepoint.com/simple-gulpy-workflow-sass/)
 * [Patrick Catanzariti - Getting Started with Browserify] (http://www.sitepoint.com/getting-started-browserify/)
+* [Smashing Magazine - Efficient Image Resizing With ImageMagick] (http://www.smashingmagazine.com/2015/06/efficient-image-resizing-with-imagemagick/)
 * [JSPM] (http://jspm.io/docs/getting-started.html)
 * [ryantbrown] (https://gist.github.com/ryantbrown/239dfdad465ce4932c81)
-
