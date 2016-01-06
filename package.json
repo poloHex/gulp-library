@@ -8,10 +8,10 @@
     "type": "git",
     "url": "https://github.com/tarah-s/gulp-library"
   },
-  "keywords": {
+  "keywords": [
     "gulp",
-    "gulp organization"
-  },
+    "gulp organisation"
+  ],
   "dependencies": {
     "gulp": "^3.9.0"
   },
