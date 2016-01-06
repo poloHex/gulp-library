@@ -18,7 +18,6 @@ var reload          = browserSync.reload;
 
 
 gulp.task('sass', function () {
-    'use strict';
     return gulp.src('_app/scss/styles.scss')
     .pipe(plumber({
       errorHandler : reportError
