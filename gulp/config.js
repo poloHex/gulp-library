@@ -44,7 +44,8 @@ favicons = [
 ];
 
 
-hero = [
-    { rename: 'bg', width: 1200, crop: false },
-    { rename: 'bg_mobile', width: 600, height: 280, crop: true },
+
+images = [
+    { folder: 'bg', width: 1200, crop: false },
+    { folder: 'bg_mobile', width: 600, height: 280, crop: true },
 ];
