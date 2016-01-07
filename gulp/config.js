@@ -58,7 +58,6 @@ module.exports = {
         path: "public/",
       }
     }
-
 };
 
 
@@ -90,13 +89,14 @@ kitError = function (error) {
      message: error.message,
      sound: 'Basso',
    }).write(error);
-  this.emit('end'); 
+  this.emit('end');
 };
+
 
 reportError = function (error) {
     notify({
        title: 'Error: [' + error.plugin + ']',
-       subtitle: 'File:'  + error.message,
+       subtitle: 'File:'  + error.file,
        message: 'Line:' + error.line,
        sound: 'Funk',
      }).write(error);
