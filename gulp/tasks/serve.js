@@ -1,5 +1,5 @@
 /**
-* Dev set up watches uncompiled scripts, sass files with browser reload and osx noitify messaging
+* A development set up includes browser-sync, OSX notify messaging for sass errors and watches uncompiled scripts & sass files
 
 * Requirements
 * gulp-plumber: https://github.com/floatdrop/gulp-plumber

@@ -21,10 +21,14 @@ npm install
 ```
 
 ### Start
+gulp will run the gulp serve script by default. You can change this in gulpfile.js.
+gulp serve is a development set up includes browser-sync, OSX notify messaging for sass errors and watches uncompiled scripts & sass files.
+
 ```
 gulp
 
 ```
+At this point in time there is no build script.
 
 ### Config
 Change all your global settings in the gulp/config.js file
