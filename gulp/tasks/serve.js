@@ -1,5 +1,5 @@
 /**
-* Dev set up watches uncompiled scripts, sass files with browser reload and osx noity messaging
+* Dev set up watches uncompiled scripts, sass files with browser reload and osx noitify messaging
 
 * Requirements
 * gulp-plumber: https://github.com/floatdrop/gulp-plumber
