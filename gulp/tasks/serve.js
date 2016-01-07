@@ -21,6 +21,11 @@ gulp.task('serve', function() {
     }
   });
   gulp.watch(config.sass.input.files, ['sass']);
-  gulp.watch(config.js.input.files, ['watch-scripts']);
+  gulp.watch(config.js.input.files, ['watch']);
   gulp.watch(config.baseurl+'/*.html').on('change',browserSync.reload);
+});
+
+gulp.task('watch', function () {
+  return gulp.src(config.js.input.files)
+  .pipe(browserSync.stream())
 });
