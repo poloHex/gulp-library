@@ -3,6 +3,7 @@
 **/
 
 var notify          = require('gulp-notify');
+var gutil           = require('gulp-util');
 
 // Global Settings
 module.exports = {
@@ -45,7 +46,19 @@ module.exports = {
           path: 'public/assets/images/',
           favicons: 'public/assets/images/favicons/'
       }
+    },
+
+    kit: {
+      input: {
+        files: "_app/kit/**/*.kit",
+        file: "_app/kit/index.kit"
+      },
+      output: {
+        file: "index.html",
+        path: "public/",
+      }
     }
+
 };
 
 
@@ -65,20 +78,27 @@ favicons = [
 ];
 
 
-
 images = [
     { folder: 'bg', width: 1200, crop: false },
     { folder: 'bg_mobile', width: 600, height: 280, crop: true },
 ];
 
 
+kitError = function (error) {
+  notify({
+     title: 'Error: [' + error.plugin + ']',
+     message: error.message,
+     sound: 'Basso',
+   }).write(error);
+  this.emit('end'); 
+};
+
 reportError = function (error) {
     notify({
        title: 'Error: [' + error.plugin + ']',
-       subtitle: 'File: [' + error.file + ']',
-       message: 'Line: ' + error.line ,
+       subtitle: 'File:'  + error.message,
+       message: 'Line:' + error.line,
        sound: 'Funk',
-       duration: 5
      }).write(error);
     this.emit('end');
 };
