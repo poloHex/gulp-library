@@ -18,16 +18,3 @@ var notify          = require('gulp-notify');
 var plumber         = require('gulp-plumber');
 var browserSync     = require('browser-sync');
 var reload          = browserSync.reload;
- 
-
-gulp.task('serve', ['styles'], function() {
-  browserSync.init({
-    server: {
-      baseDir: config.baseurl
-    }
-  });
-  gulp.watch(config.sass.input.files, ['styles']);
-  gulp.watch(config.baseurl+'/*.html').on('change',browserSync.reload);
-});
-
- 
