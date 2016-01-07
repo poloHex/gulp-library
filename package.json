@@ -7,10 +7,16 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/tarah-s/gulp-library"
-  },
+  }, 
   "keywords": [
     "gulp",
-    "gulp organisation"
+    "gulp organisation",
+    "browser-sync",
+    "live reload",
+    "watch",
+    "gulp structure",
+    "gulp tasks",
+    "gulp batch image"
   ],
   "dependencies": {
     "gulp": "^3.9.0"
@@ -24,6 +30,7 @@
     "gulp-cache": "^0.2.10",
     "gulp-concat": "^2.6.0",
     "gulp-ignore": "^1.2.1",
+    "gulp-kit": "^0.3.0",
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^2.0.3",
     "gulp-sourcemaps": "^1.5.2",
