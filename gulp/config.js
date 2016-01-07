@@ -12,8 +12,8 @@ module.exports = {
     sass: {
         input: {
             file: 'styles.scss',
-            files: 'app/scss/**/*.scss',
-            path: 'app/scss/',
+            files: '_app/scss/**/*.scss',
+            path: '_app/scss/',
         },
         output: {
             style: 'expanded',
@@ -26,20 +26,20 @@ module.exports = {
 
     js: {
         input: {
-            files: 'app/js/**/*.js',
-            file: 'app/js/app.js'
+            files: '_app/js/**/*.js',
+            file: '_app/js/_app.js'
         },
         output: {
             file: 'main.js',
-            path: 'assets/js',
+            path: 'public/assets/js',
             message: 'JS task complete'
         }
     },
 
     images: {
       input: {
-          files: 'app/src/images/',
-          favicons: 'app/src/images/favicons/'
+          files: '_app/src/images/',
+          favicons: '_app/src/images/favicons/'
       },
       output: {
           path: 'public/assets/images/',
