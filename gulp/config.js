@@ -4,7 +4,7 @@
 
 var chalk           = require('chalk');
 var notify          = require('gulp-notify');
-var gutil           = require('gulp-util'); 
+var gutil           = require('gulp-util');
 // Global Settings
 module.exports = {
 
@@ -28,8 +28,7 @@ module.exports = {
     js: {
         input: {
             files: '_app/js/**/*.js',
-            file: '_app/js/_app.js',
-            bundle: ''
+            file: '_app/js/_app.js' 
         },
         output: {
             file: 'main.js',
