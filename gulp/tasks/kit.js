@@ -1,15 +1,14 @@
 /**
- * @task lint
+ * @task kit
  * Lints all scripts in the scripts folder
  */
 
 var gulp            = require('gulp');
 var config          = require('../config');
-var kit             = require('gulp-kit');
-var plumber         = require('gulp-plumber');
-var notify          = require('gulp-notify');
-var plumber         = require('gulp-plumber');
 var browserSync     = require('browser-sync');
+var kit             = require('gulp-kit');
+var notify          = require('gulp-notify');
+var plumber         = require('gulp-plumber'); 
 var reload          = browserSync.reload;
 
 
