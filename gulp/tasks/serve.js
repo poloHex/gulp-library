@@ -13,6 +13,12 @@ var requireDir      = require('require-dir');
 var browserSync     = require('browser-sync');
 var reload          = browserSync.reload;
 
+var gulp            = require('gulp');
+var config          = require('../config');
+var requireDir      = require('require-dir');
+var browserSync     = require('browser-sync');
+var reload          = browserSync.reload;
+
 
 gulp.task('serve', function() {
   browserSync.init({

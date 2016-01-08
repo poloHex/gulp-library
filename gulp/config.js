@@ -2,9 +2,9 @@
 * Notify is used for global error message
 **/
 
+var chalk           = require('chalk');
 var notify          = require('gulp-notify');
-var gutil           = require('gulp-util');
-
+var gutil           = require('gulp-util'); 
 // Global Settings
 module.exports = {
 
@@ -28,7 +28,8 @@ module.exports = {
     js: {
         input: {
             files: '_app/js/**/*.js',
-            file: '_app/js/_app.js'
+            file: '_app/js/_app.js',
+            bundle: ''
         },
         output: {
             file: 'main.js',
@@ -57,7 +58,13 @@ module.exports = {
         file: "index.html",
         path: "public/",
       }
+    },
+
+    chalkStyles: {
+      eTitle: chalk.bold,
+      eMsg: chalk.red
     }
+
 };
 
 
@@ -81,24 +88,3 @@ images = [
     { folder: 'bg', width: 1200, crop: false },
     { folder: 'bg_mobile', width: 600, height: 280, crop: true },
 ];
-
-
-kitError = function (error) {
-  notify({
-     title: 'Error: [' + error.plugin + ']',
-     message: error.message,
-     sound: 'Basso',
-   }).write(error);
-  this.emit('end');
-};
-
-
-reportError = function (error) {
-    notify({
-       title: 'Error: [' + error.plugin + ']',
-       subtitle: 'File:'  + error.file,
-       message: 'Line:' + error.line,
-       sound: 'Funk',
-     }).write(error);
-    this.emit('end');
-};

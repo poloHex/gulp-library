@@ -7,18 +7,31 @@
 
 var gulp            = require('gulp');
 var config          = require('../config');
+var browserSync     = require('browser-sync');
 var autoprefixer    = require('gulp-autoprefixer');
 var sourcemaps      = require('gulp-sourcemaps');
 var sass            = require('gulp-sass');
 var ignore          = require('gulp-ignore');
 var notify          = require('gulp-notify');
 var plumber         = require('gulp-plumber');
-var browserSync     = require('browser-sync');
+var path            = require('path'); //extracts the file name and not the path
 var reload          = browserSync.reload;
 
 
+reportError = function (error) {
+    sassfile = path.basename(error.file)
+    notify({
+       title: 'Error: [' + error.plugin + '] ' + sassfile,
+       message: 'LINE:' + error.line,
+       sound: 'Funk',
+     }).write(error);
+     console.log(config.chalkStyles.eTitle.white.bgRed('REPORT : Error in ' + error.plugin) + '\n' + config.chalkStyles.eTitle('FILE: ') + config.chalkStyles.eMsg(sassfile) + '\n' + config.chalkStyles.eTitle('LINE: ') + config.chalkStyles.eMsg(error.line )+ '\n' + config.chalkStyles.eTitle('MESSAGE: ') + config.chalkStyles.eMsg(error.message ));
+    this.emit('end');
+};
+
+
 gulp.task('sass', function () {
-    return gulp.src(config.sass.input.path+config.sass.input.file)  
+    return gulp.src(config.sass.input.path+config.sass.input.file)
     .pipe(plumber({
       errorHandler : reportError
     }))
@@ -26,7 +39,7 @@ gulp.task('sass', function () {
     .pipe(sass({
         outputStyle: 'compressed',
         precision: 14,
-    }).on('error',sass.logError))
+    }))
     .pipe(autoprefixer())
     .pipe(sourcemaps.write('./'))
     .pipe(browserSync.stream())
