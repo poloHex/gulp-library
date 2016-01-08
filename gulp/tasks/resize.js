@@ -1,4 +1,5 @@
 /**
+ * @task resize
 * Image Crop and Compress with Tinypng and Image Resize
 
 * gulp-tinypng-compress: https://www.npmjs.com/package/gulp-tinypng
