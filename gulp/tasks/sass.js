@@ -7,14 +7,14 @@
 
 var gulp            = require('gulp');
 var config          = require('../config');
-var browserSync     = require('browser-sync');
 var autoprefixer    = require('gulp-autoprefixer');
-var sourcemaps      = require('gulp-sourcemaps');
-var sass            = require('gulp-sass');
+var browserSync     = require('browser-sync');
 var ignore          = require('gulp-ignore');
 var notify          = require('gulp-notify');
-var plumber         = require('gulp-plumber');
 var path            = require('path'); //extracts the file name and not the path
+var plumber         = require('gulp-plumber');
+var sass            = require('gulp-sass');
+var sourcemaps      = require('gulp-sourcemaps');
 var reload          = browserSync.reload;
 
 
