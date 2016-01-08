@@ -7,11 +7,12 @@ A gulp task library for project builds.
 * [Node.js] (https://nodejs.org/en/)
 * [Gulp] (http://gulpjs.com/)
 
-#### Image processing
+##### Image processing
 You can use homebrew to install both ImageMagick and GraphicsMagick. These will be needed to run resize of image files.
 * [Homebrew] (http://brew.sh/)
 * [ImageMagick] (http://www.imagemagick.org/script/index.php)
 * [GraphicsMagick] (http://www.graphicsmagick.org/)
+
 
 ### Installation
 ```
@@ -19,6 +20,10 @@ git clone https://github.com/tarah-s/gulp-library.git
 npm install
 
 ```
+
+### Config
+Change all your global settings in the gulp/config.js file
+
 
 ### Start
 gulp will run the gulp serve script by default. You can change this in gulpfile.js.
@@ -28,15 +33,53 @@ gulp serve is a development set up includes browser-sync, OSX notify messaging f
 gulp
 
 ```
-At this point in time there is no build script.
 
-### Config
-Change all your global settings in the gulp/config.js file
+or 
+
+```
+gulp serve
+
+```
+
+
+### Build
+Compiles , minifies & lints javascript. Compiles sass files and shows terminal & osx notify error report if errors
+
+```
+gulp build
+
+```
 
 
 ### Run individual gulp tasks
+
+##### Batch image processing
+Example in the library is running batch favicon images from one file, settings are in config.js 
 ```
 gulp batch
+
+```
+
+##### Sass
+Compiles sass with osx notification report
+
+```
+gulp sass
+
+```
+
+##### Scripts
+Compiles , minifies & lints javascript with osx notify error report
+
+```
+gulp sass
+
+```
+
+##### Clean
+Removes all compiled sass & javascript files
+```
+gulp clean
 
 ```
 
