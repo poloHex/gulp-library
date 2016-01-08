@@ -73,7 +73,7 @@ gulp sass
 Compiles , minifies & lints javascript with osx notify error report
 
 ```
-gulp sass
+gulp scripts
 ```
 
 
