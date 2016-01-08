@@ -1,4 +1,5 @@
 /**
+* @task tinypng
 * Compress with Tinypng
 
 * gulp-tinypng-compress: https://www.npmjs.com/package/gulp-tinypng
