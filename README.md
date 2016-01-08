@@ -14,15 +14,18 @@ You can use homebrew to install both ImageMagick and GraphicsMagick. These will 
 * [GraphicsMagick] (http://www.graphicsmagick.org/)
 
 
+
 ### Installation
+
 ```
 git clone https://github.com/tarah-s/gulp-library.git
 npm install
-
 ```
+
 
 ### Config
 Change all your global settings in the gulp/config.js file
+
 
 
 ### Start
@@ -31,14 +34,12 @@ gulp serve is a development set up includes browser-sync, OSX notify messaging f
 
 ```
 gulp
-
 ```
 
 or 
 
 ```
 gulp serve
-
 ```
 
 
@@ -47,7 +48,6 @@ Compiles , minifies & lints javascript. Compiles sass files and shows terminal &
 
 ```
 gulp build
-
 ```
 
 
@@ -55,32 +55,32 @@ gulp build
 
 ##### Batch image processing
 Example in the library is running batch favicon images from one file, settings are in config.js 
-```
-gulp batch
 
 ```
+gulp batch
+```
+
 
 ##### Sass
 Compiles sass with osx notification report
 
 ```
 gulp sass
-
 ```
+
 
 ##### Scripts
 Compiles , minifies & lints javascript with osx notify error report
 
 ```
 gulp sass
-
 ```
+
 
 ##### Clean
 Removes all compiled sass & javascript files
 ```
 gulp clean
-
 ```
 
 ### Resources
