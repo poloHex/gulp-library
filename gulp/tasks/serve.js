@@ -1,4 +1,5 @@
 /**
+* @task serve
 * A development set up includes browser-sync, OSX notify messaging for sass errors and watches uncompiled scripts & sass files
 
 * Requirements
@@ -9,14 +10,8 @@
 
 var gulp            = require('gulp');
 var config          = require('../config');
+var browserSync     = require('browser-sync');  
 var requireDir      = require('require-dir');
-var browserSync     = require('browser-sync');
-var reload          = browserSync.reload;
-
-var gulp            = require('gulp');
-var config          = require('../config');
-var requireDir      = require('require-dir');
-var browserSync     = require('browser-sync');
 var reload          = browserSync.reload;
 
 
