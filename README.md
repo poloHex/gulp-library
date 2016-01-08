@@ -83,6 +83,11 @@ Removes all compiled sass & javascript files
 gulp clean
 ```
 
+
+### Error report
+Change the color of your terminal error report in config.js using chalk colors
+
+
 ### Resources
 * [Gulp - Getting Started] (https://github.com/gulpjs/gulp/blob/master/docs/getting-started.md)
 * [Browsersync + Gulp.js] (https://www.browsersync.io/docs/gulp/)
