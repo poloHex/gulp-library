@@ -40,7 +40,9 @@ gulp.task('sass', function () {
         outputStyle: 'compressed',
         precision: 14,
     }))
-    .pipe(autoprefixer())
+    .pipe(autoprefixer({
+      browsers: ['last 2 versions'] 
+    }))
     .pipe(sourcemaps.write('./'))
     .pipe(browserSync.stream())
     .pipe(gulp.dest(config.sass.output.path))
