@@ -28,7 +28,7 @@ module.exports = {
     js: {
         input: {
             files: '_app/js/**/*.js',
-            file: '_app/js/_app.js' 
+            file: '_app/js/_app.js'
         },
         output: {
             file: 'main.js',
@@ -68,18 +68,18 @@ module.exports = {
 
 
 favicons = [
-    { rename: 'mstile-558x558', width: 558, crop: false },
-    { rename: 'mstile-558x270', width: 558, height: 270, crop: true },
-    { rename: 'mstile-270x270', width: 270, height: 270, crop: true },
-    { rename: 'mstile-128x128', width: 128, height: 128, crop: true },
-    { rename: 'icon-192x192', width: 192, height: 192, crop: true },
-    { rename: 'icon-144x144', width: 144, height: 144, crop: true },
-    { rename: 'icon-96x96', width: 96, height: 96, crop: true },
-    { rename: 'icon-72x72', width: 72, height: 72, crop: true },
-    { rename: 'icon-48x48', width: 48, height: 48, crop: true },
-    { rename: 'icon-36x36', width: 36, height: 36, crop: true },
-    { rename: 'favicon-192x192', width: 192, height: 192, crop: true },
-    { rename: 'apple-touch-icon-192x192', width: 192, height: 192, crop: true },
+    { rename: 'mstile-558x558.png', width: 558, crop: false },
+    { rename: 'mstile-558x270.png', width: 558, height: 270, crop: true },
+    { rename: 'mstile-270x270.png', width: 270, height: 270, crop: true },
+    { rename: 'mstile-128x128.png', width: 128, height: 128, crop: true },
+    { rename: 'icon-192x192.png', width: 192, height: 192, crop: true },
+    { rename: 'icon-144x144.png', width: 144, height: 144, crop: true },
+    { rename: 'icon-96x96.png', width: 96, height: 96, crop: true },
+    { rename: 'icon-72x72.png', width: 72, height: 72, crop: true },
+    { rename: 'icon-48x48.png', width: 48, height: 48, crop: true },
+    { rename: 'icon-36x36.png', width: 36, height: 36, crop: true },
+    { rename: 'favicon-192x192.png', width: 192, height: 192, crop: true },
+    { rename: 'apple-touch-icon-192x192.png', width: 192, height: 192, crop: true },
 ];
 
 
