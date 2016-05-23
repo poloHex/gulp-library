@@ -6,16 +6,16 @@
 var gulp            = require('gulp');
 var config          = require('../config');
 var browserSync     = require('browser-sync');
-var buffer          = require('vinyl-buffer'); 
-var chalk           = require('chalk');  
+var buffer          = require('vinyl-buffer');
+var chalk           = require('chalk');
 var ignore          = require('gulp-ignore');
 var jshint          = require('gulp-jshint'); // JS linting
 var map             = require('map-stream');
 var notify          = require('gulp-notify');
-var path            = require('path'); //extracts the file name and not the path 
+var path            = require('path'); //extracts the file name and not the path
 var plumber         = require('gulp-plumber');
 var sourcemaps      = require('gulp-sourcemaps');
-var uglify          = require('gulp-uglify'); 
+var uglify          = require('gulp-uglify');
 
 
 scriptsError = function (error) {
@@ -45,16 +45,16 @@ scriptsReport = map(function (file, cb) {
   cb(null, file);
 });
 
- 
+
 gulp.task('scripts', function () {
      return gulp.src(config.js.input.file)
-	    .pipe(jshint()) 
-	    .pipe(gulp.dest(config.js.output.path))
-	    .pipe(plumber({
-	      errorHandler : scriptsError
-	    }))
-	    .pipe(scriptsReport)
-	    .pipe(uglify()) 
-	    .pipe(buffer()); 
+    .pipe(jshint())
+    .pipe(plumber({
+      errorHandler : scriptsError
+    }))
+    .pipe(scriptsReport)
+    .pipe(uglify())
+    .pipe(gulp.dest(config.js.output.path))
+    .pipe(buffer());
 });
- 
+
