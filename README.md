@@ -36,7 +36,7 @@ gulp serve is a development set up includes browser-sync, OSX notify messaging f
 gulp
 ```
 
-or 
+or
 
 ```
 gulp serve
@@ -54,7 +54,7 @@ gulp build
 ### Run individual gulp tasks
 
 ##### Batch image processing
-Example in the library is running batch favicon images from one file, settings are in config.js 
+Example in the library is running batch favicon images from one file, settings are in config.js
 
 ```
 gulp batch
