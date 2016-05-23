@@ -8,7 +8,9 @@ var gutil           = require('gulp-util');
 // Global Settings
 module.exports = {
 
-    baseurl: 'public',
+    baseurl:       'public',
+    baseIndex:     'index',
+    baseIndexType: '.php',
 
     sass: {
         input: {
@@ -45,17 +47,6 @@ module.exports = {
       output: {
           path: 'public/assets/images/',
           favicons: 'public/assets/images/favicons/'
-      }
-    },
-
-    kit: {
-      input: {
-        files: "_app/kit/**/*.kit",
-        file: "_app/kit/index.kit"
-      },
-      output: {
-        file: "index.html",
-        path: "public/",
       }
     },
 

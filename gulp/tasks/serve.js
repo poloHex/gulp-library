@@ -10,7 +10,7 @@
 
 var gulp            = require('gulp');
 var config          = require('../config');
-var browserSync     = require('browser-sync');  
+var browserSync     = require('browser-sync');
 var requireDir      = require('require-dir');
 var reload          = browserSync.reload;
 
@@ -18,12 +18,13 @@ var reload          = browserSync.reload;
 gulp.task('serve', function() {
   browserSync.init({
     server: {
-      baseDir: config.baseurl
+      baseDir: config.baseurl,
+      index:   config.baseIndex+config.baseIndexType
     }
   });
   gulp.watch(config.sass.input.files, ['sass']);
   gulp.watch(config.js.input.files, ['watch']);
-  gulp.watch(config.baseurl+'/*.html').on('change',browserSync.reload);
+  gulp.watch(config.baseurl+'/*'+config.baseIndexType).on('change',browserSync.reload);
 });
 
 gulp.task('watch', function () {

@@ -41,7 +41,7 @@ gulp.task('sass', function () {
         precision: 14,
     }))
     .pipe(autoprefixer({
-      browsers: ['> 1%, last 2 versions, Firefox ESR']
+      browsers: ['last 2 versions']
     }))
     .pipe(sourcemaps.write('./'))
     .pipe(browserSync.stream())
