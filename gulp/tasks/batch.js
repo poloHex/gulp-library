@@ -39,7 +39,7 @@ gulp.task('batch', function () {
       .pipe(rename(type.rename))
 
       .pipe(tinypng({
-        key: 'xqCaq2-ii49c5-l0oZjPnAV1DJdGGZiD',
+        key: 'xxxxx',
   	    log: true
       }))
 
