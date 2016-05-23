@@ -18,8 +18,7 @@ var reload          = browserSync.reload;
 gulp.task('serve', function() {
   browserSync.init({
     server: {
-      baseDir: config.baseurl,
-      index:   config.baseIndex+config.baseIndexType
+      baseDir: config.baseurl
     }
   });
   gulp.watch(config.sass.input.files, ['sass']);

@@ -10,7 +10,7 @@ module.exports = {
 
     baseurl:       'public',
     baseIndex:     'index',
-    baseIndexType: '.php',
+    baseIndexType: '.html',
 
     sass: {
         input: {
