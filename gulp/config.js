@@ -41,6 +41,17 @@ module.exports = {
         }
     },
 
+    kit: {
+        input: {
+            files: "_src/kit/**/*.kit",
+            file: "_src/kit/index.kit"
+        },
+        output: {
+            file: "index.html",
+            path: "public/",
+        }
+    },
+
     images: {
       input: {
           files: '_src/src/images/',
