@@ -19,7 +19,8 @@
     "gulp batch image"
   ],
   "dependencies": {
-    "gulp": "^3.9.1"
+    "gulp": "^3.9.1",
+    "gulp-shell": "^0.5.2"
   },
   "devDependencies": {
     "browser-sync": "^2.12.8",
