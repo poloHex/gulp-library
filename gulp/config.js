@@ -8,7 +8,6 @@ var gutil           = require('gulp-util');
 // Global Settings
 module.exports = {
 
-    vhost:         'project.local',
     baseurl:       'public',
     baseIndex:     'index',
     baseIndexType: '.html',
