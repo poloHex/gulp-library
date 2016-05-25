@@ -8,6 +8,7 @@ var gutil           = require('gulp-util');
 // Global Settings
 module.exports = {
 
+
     baseurl:       'public',
     baseIndex:     'index',
     baseIndexType: '.html',
@@ -15,8 +16,8 @@ module.exports = {
     sass: {
         input: {
             file: 'styles.scss',
-            files: '_app/scss/**/*.scss',
-            path: '_app/scss/',
+            files: '_src/scss/**/*.scss',
+            path: '_src/scss/',
         },
         output: {
             style: 'expanded',
@@ -29,8 +30,9 @@ module.exports = {
 
     js: {
         input: {
-            files: '_app/js/**/*.js',
-            file: '_app/js/_app.js'
+            files:   '_src/js/**/*.js',
+            file:    '_src/js/_app.js',
+            rbuild:  '_src/js/_build.js'
         },
         output: {
             file: 'main.js',
@@ -41,8 +43,8 @@ module.exports = {
 
     images: {
       input: {
-          files: '_app/src/images/',
-          favicons: '_app/src/images/favicons/'
+          files: '_src/src/images/',
+          favicons: '_src/src/images/favicons/'
       },
       output: {
           path: 'public/assets/images/',
