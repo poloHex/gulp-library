@@ -77,6 +77,14 @@ gulp scripts
 ```
 
 
+##### Rbuild
+Compiles Require.js build script with shell commands
+
+```
+gulp rbuild
+```
+
+
 ##### Clean
 Removes all compiled sass & javascript files
 ```
