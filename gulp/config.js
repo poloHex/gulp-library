@@ -29,6 +29,7 @@ module.exports = {
 
     js: {
         input: {
+            path:    '_src/js',
             files:   '_src/js/**/*.js',
             file:    '_src/js/_app.js',
             rbuild:  '_src/js/_build.js'
