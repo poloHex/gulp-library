@@ -35,8 +35,8 @@ module.exports = {
             build:   '_build.js'
         },
         output: {
-            file: 'main.js',
-            path: 'assets/js',
+            file: 'scripts.min.js',
+            path: 'assets/js/',
             message: 'JS task complete'
         }
     },
@@ -54,8 +54,8 @@ module.exports = {
 
     images: {
       input: {
-          files: '_src/src/images/',
-          favicons: '_src/src/images/favicons/'
+          files: '_src/images/',
+          favicons: '_src/images/favicons/'
       },
       output: {
           path: 'public/assets/images/',
