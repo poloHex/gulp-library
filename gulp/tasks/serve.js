@@ -12,7 +12,6 @@ var gulp            = require('gulp');
 var config          = require('../config');
 var browserSync     = require('browser-sync');
 var requireDir      = require('require-dir');
-var php             = require('gulp-connect-php');
 var reload          = browserSync.reload;
 
 gulp.task('serve', function() {
@@ -26,3 +25,7 @@ gulp.task('serve', function() {
   gulp.watch(config.baseurl+'/*'+config.baseIndexType).on('change',browserSync.reload);
 });
 
+gulp.task('watch', function () {
+  return gulp.src(config.js.input.files)
+  .pipe(browserSync.stream())
+});

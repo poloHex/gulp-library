@@ -31,8 +31,8 @@ module.exports = {
         input: {
             path:    '_src/js/',
             files:   '_src/js/**/*.js',
-            file:    '_src/js/_app.js',
-            build:  '_build.js'
+            file:    '_src/js/app.js',
+            build:   '_build.js'
         },
         output: {
             file: 'main.js',
