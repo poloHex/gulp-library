@@ -44,7 +44,7 @@ module.exports = {
     kit: {
         input: {
             files: "_src/kit/**/*.kit",
-            file: "_src/kit/index.kit"
+            file: "_src/kit/*.kit"
         },
         output: {
             file: "index.html",
