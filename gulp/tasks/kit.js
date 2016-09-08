@@ -12,7 +12,7 @@ var browserSync     = require('browser-sync');
 var reload          = browserSync.reload;
 
 
-kitError = function (error) {
+var kitError = function (error) {
   notify({
      title: 'Error: [' + error.plugin + ']',
      message: error.message + 'File: ' + error.Line,

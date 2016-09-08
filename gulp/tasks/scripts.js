@@ -18,7 +18,7 @@ var sourcemaps      = require('gulp-sourcemaps');
 var uglify          = require('gulp-uglify');
 
 
-scriptsError = function (error) {
+var scriptsError = function (error) {
     notify({
        title: 'Error: [gulp-jshint]' + ' ' + jsfile ,
        message: ' LINE:' + line + ' ' + reason,
@@ -57,4 +57,5 @@ gulp.task('scripts', function () {
     .pipe(gulp.dest(config.js.output.path))
     .pipe(buffer());
 });
+
 

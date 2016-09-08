@@ -19,7 +19,7 @@ var sourcemaps      = require('gulp-sourcemaps');
 var reload          = browserSync.reload;
 
 
-reportError = function (error) {
+var reportError = function (error) {
     sassfile = path.basename(error.file)
     notify({
        title: 'Error: [' + error.plugin + '] ' + sassfile,
