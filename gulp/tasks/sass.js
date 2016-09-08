@@ -13,6 +13,7 @@ var ignore          = require('gulp-ignore');
 var notify          = require('gulp-notify');
 var path            = require('path'); //extracts the file name and not the path
 var plumber         = require('gulp-plumber');
+var rename          = require("gulp-rename");
 var sass            = require('gulp-sass');
 var sourcemaps      = require('gulp-sourcemaps');
 var reload          = browserSync.reload;
@@ -45,6 +46,7 @@ gulp.task('sass', function () {
     }))
     .pipe(sourcemaps.write('./'))
     .pipe(browserSync.stream())
+    .pipe(rename(config.sass.output.file))
     .pipe(gulp.dest(config.sass.output.path))
     .pipe(ignore.exclude('*.map'))
 });

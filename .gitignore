@@ -1,4 +1,3 @@
 node_modules/
-_app/
+_src/
 public/
-_app/scss/.sass-cache/

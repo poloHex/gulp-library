@@ -8,7 +8,8 @@ var shell           = require('gulp-shell');
 
 gulp.task('rbuild', shell.task([
     'cd  $PWD',
-    'r.js -o '+ config.js.input.rbuild
+    'r.js -o '+ config.js.input.path + config.js.input.rbuild
 ]))
+
 
 
