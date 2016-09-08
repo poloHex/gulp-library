@@ -29,10 +29,10 @@ module.exports = {
 
     js: {
         input: {
-            path:    '_src/js',
+            path:    '_src/js/',
             files:   '_src/js/**/*.js',
             file:    '_src/js/_app.js',
-            rbuild:  '_build.js'
+            build:  '_build.js'
         },
         output: {
             file: 'main.js',

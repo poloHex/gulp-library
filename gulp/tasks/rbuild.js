@@ -7,9 +7,7 @@ var config          = require('../config');
 var shell           = require('gulp-shell');
 
 gulp.task('rbuild', shell.task([
-    'cd  $PWD',
-    'r.js -o '+ config.js.input.path + config.js.input.rbuild
+    'cd $PWD/' + config.js.input.path + ' && r.js -o ' + config.js.input.build
 ]))
-
 
 
