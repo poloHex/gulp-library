@@ -21,7 +21,7 @@ gulp.task('serve', function() {
     }
   });
   gulp.watch(config.sass.input.files, ['sass']);
-  gulp.watch(config.js.input.files, ['watch']);
+  gulp.watch(config.js.input.files, ['scripts']);
   gulp.watch(config.baseurl+'/*'+config.baseIndexType).on('change',browserSync.reload);
 });
 
