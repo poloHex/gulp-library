@@ -5,9 +5,9 @@
 var chalk           = require('chalk');
 var notify          = require('gulp-notify');
 var gutil           = require('gulp-util');
+
 // Global Settings
 module.exports = {
-
     baseurl:       '',
     baseIndex:     'index',
     baseIndexType: '.html',
@@ -30,12 +30,14 @@ module.exports = {
     js: {
         input: {
             path:    '_src/js/',
+            vendor:  '_src/js/vendor/**/*.js',
             files:   '_src/js/**/*.js',
-            file:    '_src/js/app.js',
+            file:    '_src/js/_app.js',
             build:   '_build.js'
         },
         output: {
             file: 'scripts.min.js',
+            vendor:'vendor.min.js',
             path: 'assets/js/',
             message: 'JS task complete'
         }
@@ -44,23 +46,12 @@ module.exports = {
     kit: {
         input: {
             files: "_src/kit/**/*.kit",
-            file: "_src/kit/*.kit"
+            file: "_src/kit/index.kit"
         },
         output: {
             file: "index.html",
             path: "",
         }
-    },
-
-    images: {
-      input: {
-          files: '_src/images/',
-          favicons: '_src/images/favicons/'
-      },
-      output: {
-          path: 'public/assets/images/',
-          favicons: 'assets/images/favicons/'
-      }
     },
 
     chalkStyles: {
@@ -70,24 +61,3 @@ module.exports = {
 
 };
 
-
-favicons = [
-    { rename: 'mstile-558x558.png', width: 558, crop: false },
-    { rename: 'mstile-558x270.png', width: 558, height: 270, crop: true },
-    { rename: 'mstile-270x270.png', width: 270, height: 270, crop: true },
-    { rename: 'mstile-128x128.png', width: 128, height: 128, crop: true },
-    { rename: 'icon-192x192.png', width: 192, height: 192, crop: true },
-    { rename: 'icon-144x144.png', width: 144, height: 144, crop: true },
-    { rename: 'icon-96x96.png', width: 96, height: 96, crop: true },
-    { rename: 'icon-72x72.png', width: 72, height: 72, crop: true },
-    { rename: 'icon-48x48.png', width: 48, height: 48, crop: true },
-    { rename: 'icon-36x36.png', width: 36, height: 36, crop: true },
-    { rename: 'favicon-192x192.png', width: 192, height: 192, crop: true },
-    { rename: 'apple-touch-icon-192x192.png', width: 192, height: 192, crop: true },
-];
-
-
-images = [
-    { folder: 'bg', width: 1200, crop: false },
-    { folder: 'bg_mobile', width: 600, height: 280, crop: true },
-];

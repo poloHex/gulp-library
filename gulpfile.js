@@ -2,7 +2,7 @@ var gulp            = require('gulp');
 var requireDir      = require('require-dir');
 
 // Gulp snippets, recurse default is false
-requireDir('./gulp/tasks', { recurse: false });
+requireDir('./_src/gulp/tasks', { recurse: false });
 
 
 // DEV -  Serve sass with live reload
