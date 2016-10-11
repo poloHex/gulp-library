@@ -20,8 +20,7 @@ var reportError = function (error) {
 gulp.task('paragraphs', function () {
     return gulp.src(config.twig.input.paragraphs)
         .pipe(stripCode({
-            start_comment: "test-code",
-            end_comment: "test-code-end"
+            pattern: /({# test-code #}\n?)[\s\S]*?({# test-code-end #}\n?)/g
         }))
         .pipe(gulp.dest(config.twig.output.paragraphs));
 });
