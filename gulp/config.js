@@ -42,18 +42,16 @@ module.exports = {
             message: 'JS task complete'
         }
     },
-
-    kit: {
+    twig: {
         input: {
-            files: "_src/kit/**/*.kit",
-            file: "_src/kit/index.kit"
+            files: "_src/twig/**/*.twig",
+            file: "_src/twig/index.twig"
         },
         output: {
             file: "index.html",
             path: "",
         }
     },
-
     chalkStyles: {
       eTitle: chalk.bold,
       eMsg: chalk.red
